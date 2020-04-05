@@ -22,6 +22,8 @@ def fourth_challenge
 end
   
 def bonus
+  bonus[:montague][:hero][:status] = "dead"
+  bonus[:capulet][:heroine][:status] = "dead"
   bonus = {
      :montague => {
         :patriarch => {name: "Lord Montague", age: "53"},
@@ -42,6 +44,4 @@ def bonus
         ]
      }
   }
-  bonus[:montague][:hero][:status] = "dead"
-  bonus[:capulet][:heroine][:status] = "dead"
 end
